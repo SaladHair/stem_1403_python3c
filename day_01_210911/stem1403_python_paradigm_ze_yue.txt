@@ -1,0 +1,74 @@
+Homework
+Date: 2021-09-11
+Author: Ze Yue Li
+
+[Research]
+What paradigms do Python support or emphasize?
+
+Please do a quick research and look into it, then organize your information into a well-formatted document which
+contains title, author, date, body content, references etc.
+
+keywords used: python supported paradigms, imperative paradigm, functional paradigm,
+object-oriented paradigm
+
+sources: wikipedia, https://opensource.com/article/19/10/python-programming-paradigms
+
+
+Python supports four main programming paradigms: imperative, functional, procedural, and object-oriented.
+
+Imperative paradigm:
+
+In computer science, imperative programming is a programming paradigm that uses statements that change a program's
+state. In much the same way that the imperative mood in natural languages expresses commands, an imperative program
+consists of commands for the computer to perform. Imperative programming focuses on describing how a program operates.
+The term is often used in contrast to declarative programming, which focuses on what the program should accomplish
+without specifying how the program should achieve the result. (Wikipedia)
+
+In other words, imperative programming is when you type commands for a program to execute, specifying HOW the program
+should accomplish the task, not WHAT it should accomplish. For more details look up declarative paradigm.
+
+
+Procedural paradigm:
+
+Procedural paradigm is a sub-type of imperative paradigm, and it is in fact what one can believe is functional paradigm,
+since the procedural paradigm groups actions into procedures, often called functions. Procedural programming is way more
+structured than typical imperative programming, so most people prefer it, although imperative and procedural are used as
+synonyms since recently.
+
+
+Functional paradigm:
+
+In computer science, functional programming is a programming paradigm where programs are constructed by applying and
+composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions
+that map values to other values, rather than a sequence of imperative statements which update the running state of the
+program.
+
+Functional programming is sometimes treated as synonymous with purely functional programming, a subset of functional
+programming which treats all functions as deterministic mathematical functions, or pure functions. When a pure function
+is called with some given arguments, it will always return the same result, and cannot be affected by any mutable state
+or other side effects. This is in contrast with impure procedures, common in imperative programming, which can have side
+effects (such as modifying the program's state or taking input from a user). Proponents of purely functional programming
+claim that by restricting side effects, programs can have fewer bugs, be easier to debug and test, and be more suited to
+formal verification. Functional programming has its roots in academia, evolving from the lambda calculus, a formal
+system of computation based only on functions. (Wikipedia)
+
+In short, functional programming is programming with basically only functions that return to one another. Purely
+functional programming is when the programmer limits the functions to only returning a value based on the parameters
+received and doesn't let them change anything about the program. It is practically a synonym of functional programming.
+Functional programming would mean fewer bugs and a program easier to debug and test. It is also a sub-type of
+declarative programming, meaning the program achieves a wanted result without needing the steps to be specified.
+
+
+Object-oriented programming
+
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data
+and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures
+(often known as methods).
+
+A feature of objects is that an object's own procedures can access and often modify the data fields of itself
+(objects have a notion of this or self). In OOP, computer programs are designed by making them out of objects that
+interact with one another. OOP languages are diverse, but the most popular ones are class-based, meaning that objects
+are instances of classes, which also determine their types. (Wikipedia)
+
+Put simply, object-oriented programming is programming with objects interacting with each other rather than the program
+controlling everything.
