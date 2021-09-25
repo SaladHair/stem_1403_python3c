@@ -1,0 +1,19 @@
+[Homework]
+Date: 2021-09-18
+Due date: 2021-09-24
+1. Write a report on comparison of procedural programming and OOP
+Description:
+Please recall and reorganize what you learned in class about procedural programming and OOP.
+You may also do some research on the Internet.
+File name: stem1403_python_compare_paradigm_yourname.txt
+Submit it to Slack before the due date
+
+Procedural programming and Object-oriented programming
+
+Procedural programming and object-oriented programming are very different from their very cores. First, let's take a
+look at procedural programming. Procedural programming is the most typical programming paradigm. The code is organized
+and ran from top to bottom, making it easily readable and understandable. However, it is hard to reuse it since every
+program is so different from the others. Object-oriented programming, on the other hand, is focused around having
+multiple objects interact with each other. These objects contain variables and methods like the programs do in
+procedural programming. This type of programming is harder to read and takes more time to write, but it can save a lot
+of time thanks to its reusability.
