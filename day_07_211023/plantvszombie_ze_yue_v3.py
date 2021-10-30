@@ -204,9 +204,23 @@ peashooter1 = Peashooter(50, 500, 500, 3, 2, 1, "Pea", grid_object, "Peashooter1
 print("Peashooter 1 spawned at (3,2)")
 peashooters.append(peashooter1)
 plants.append(peashooter1)
+peashooter2 = Peashooter(50, 500, 500, 3, 4, 1, "Pea", grid_object, "Peashooter1", player_object)
+print("Peashooter 2 spawned at (3,2)")
+peashooters.append(peashooter2)
+plants.append(peashooter2)
+peashooter3 = Peashooter(50, 500, 500, 3, 7, 1, "Pea", grid_object, "Peashooter1", player_object)
+print("Peashooter 3 spawned at (3,2)")
+peashooters.append(peashooter3)
+plants.append(peashooter3)
 zombie1 = Zombie(500, 500, grid_object.length, 2, 1, 50, 1, grid_object, "Zombie1")
 print("Zombie 1 spawned at (10, 2)")
 zombies.append(zombie1)
+zombie2 = Zombie(500, 500, grid_object.length, 4, 1, 50, 1, grid_object, "Zombie1")
+print("Zombie 1 spawned at (10, 2)")
+zombies.append(zombie2)
+zombie3 = Zombie(500, 500, grid_object.length, 7, 1, 50, 1, grid_object, "Zombie1")
+print("Zombie 1 spawned at (10, 2)")
+zombies.append(zombie3)
 
 game = "playing"
 
