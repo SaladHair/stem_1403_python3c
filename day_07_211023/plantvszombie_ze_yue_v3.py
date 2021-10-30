@@ -204,23 +204,34 @@ peashooter1 = Peashooter(50, 500, 500, 3, 2, 1, "Pea", grid_object, "Peashooter1
 print("Peashooter 1 spawned at (3,2)")
 peashooters.append(peashooter1)
 plants.append(peashooter1)
-peashooter2 = Peashooter(50, 500, 500, 3, 4, 1, "Pea", grid_object, "Peashooter1", player_object)
-print("Peashooter 2 spawned at (3,2)")
+
+peashooter2 = Peashooter(50, 500, 500, 3, 4, 1, "Pea", grid_object, "Peashooter2", player_object)
+print("Peashooter 2 spawned at (3,4)")
 peashooters.append(peashooter2)
 plants.append(peashooter2)
-peashooter3 = Peashooter(50, 500, 500, 3, 7, 1, "Pea", grid_object, "Peashooter1", player_object)
-print("Peashooter 3 spawned at (3,2)")
+
+peashooter3 = Peashooter(50, 500, 500, 3, 4, 1, "Pea", grid_object, "Peashooter3", player_object)
+print("Peashooter 3 spawned at (2,4)")
 peashooters.append(peashooter3)
 plants.append(peashooter3)
-zombie1 = Zombie(500, 500, grid_object.length, 2, 1, 50, 1, grid_object, "Zombie1")
+
+sunflower1 = Sunflower(50, 500, 500, 3, 7, 1, 50, grid_object, "Sunflower1", player_object)
+print("Sunflower 1 spawned at (3, 7)")
+sunflowers.append(sunflower1)
+plants.append(sunflower1)
+
+zombie1 = Zombie(270, 270, grid_object.length, 2, 1, 50, 1, grid_object, "Zombie1")
 print("Zombie 1 spawned at (10, 2)")
 zombies.append(zombie1)
-zombie2 = Zombie(500, 500, grid_object.length, 4, 1, 50, 1, grid_object, "Zombie1")
-print("Zombie 1 spawned at (10, 2)")
+
+zombie2 = Zombie(270, 270, grid_object.length-1, 4, 1, 50, 1, grid_object, "Zombie2")
+print("Zombie 2 spawned at (9, 4)")
 zombies.append(zombie2)
-zombie3 = Zombie(500, 500, grid_object.length, 7, 1, 50, 1, grid_object, "Zombie1")
-print("Zombie 1 spawned at (10, 2)")
-zombies.append(zombie3)
+
+# Cone zombie but since it doesnt have additional functions, I used the basic zombie class to spawn it
+cone_zombie1 = Zombie(750, 750, grid_object.length, 4, 1, 50, 1, grid_object, "ConeZombie1")
+print("Flag Zombie 1 spawned at (10, 4)")
+zombies.append(cone_zombie1)
 
 game = "playing"
 
