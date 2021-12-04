@@ -103,12 +103,12 @@ class Calculator:
 calculator_1 = Calculator()
 print(calculator_1.set_mode(input("Please input the mode you would like to enter (1 for conversion between writing "
                                   "modes, 2 for arithmetic operations): ")))
-print(calculator_1.use_calc(input("Please enter a the first number of the operation: "),
+print(calculator_1.use_calc(input("Please enter the first number of the operation: "),
                             input("Please enter the writing mode the number you wrote is in (Write the base, 16 for "
                                   "hex, 10 for dec and so on): "),
                             input("Please enter the operation you wish to perform (For conversion, simply enter the "
                                   "base you wish to convert to, or 'Words' to convert into letters.)"),
-                            input("Please enter a the second number of the operation (Press enter if you are "
+                            input("Please enter the second number of the operation (Press enter if you are "
                                   "converting): "),
                             input("Please enter the writing mode the number you wrote is in (Ignore if you are "
                                   "converting): ")
