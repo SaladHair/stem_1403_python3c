@@ -1,7 +1,7 @@
 """
 [Homework]
-Date: 2021-11-13
-Due date: 2021-11-19
+Date: 2021-11-27
+Due date: 2021-12-03
 Project: A power calculator in OOP
 1. Design a calculator class and implement it in OOP
 Requirements:
@@ -28,7 +28,7 @@ class Calculator:
         self.tens = ["", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"]
         self.teens = ["", "eleven ", "twelve ", "thirteen ", "fourteen ", "fifteen ", "sixteen ", "seventeen ",
                       "eighteen ", "nineteen "]
-        self.available_modes = ["1"]
+        self.available_modes = ["1", "2"]
 
     def set_mode(self, new_mode):
         if new_mode in self.available_modes:
@@ -38,9 +38,21 @@ class Calculator:
             return f"Tried to set mode to {new_mode} but failed because it isn't recognized as one of the modes: " \
                    f"current mode remains {self.mode} "
 
-    def use_calc(self, term_1, operation=None, term_2=None):
+    def use_calc(self, term_1, term_1_mode, operation, term_2, term_2_mode):
         if self.mode == "1":
-            self.num_to_words(term_1)
+            return self.conversion(term_1_mode, operation, term_1)
+        elif self.mode == "2":
+            return eval(f"{int(term_1, int(term_1_mode))} {operation} {int(term_2, int(term_2_mode))}")
+
+    def conversion(self, old_mode, new_mode, num_to_convert):
+        if new_mode == "Words":
+            return self.num_to_words(int(num_to_convert, int(old_mode)))
+        elif new_mode == "2":
+            return bin(int(num_to_convert, int(old_mode)))
+        elif new_mode == "10":
+            return int(num_to_convert, int(old_mode))
+        elif new_mode == "16":
+            return hex(int(num_to_convert, int(old_mode)))
 
     def num_to_words(self, raw_input_str):
         next_num = ""
@@ -89,5 +101,15 @@ class Calculator:
 
 # main program
 calculator_1 = Calculator()
-print(calculator_1.set_mode(input("Please input the mode you would like to enter (1 for number to word conversion): ")))
-print(calculator_1.use_calc(input("Please enter a number that will be converted to words: ")))
+print(calculator_1.set_mode(input("Please input the mode you would like to enter (1 for conversion between writing "
+                                  "modes, 2 for arithmetic operations): ")))
+print(calculator_1.use_calc(input("Please enter a the first number of the operation: "),
+                            input("Please enter the writing mode the number you wrote is in (Write the base, 16 for "
+                                  "hex, 10 for dec and so on): "),
+                            input("Please enter the operation you wish to perform (For conversion, simply enter the "
+                                  "base you wish to convert to, or 'Words' to convert into letters.)"),
+                            input("Please enter a the second number of the operation (Press enter if you are "
+                                  "converting): "),
+                            input("Please enter the writing mode the number you wrote is in (Ignore if you are "
+                                  "converting): ")
+                            ))
