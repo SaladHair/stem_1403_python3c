@@ -1,0 +1,94 @@
+Final Exam
+Ze Yue
+12-11-2021
+
+Part 1.
+
+1. D
+2. C
+3. D
+4.
+9
+10
+9
+11
+10
+5.
+[1, 2, 3]
+[9, 2, 3]
+[9, 2, 3]
+[99, 2, 3]
+6. C
+7. D
+8. B
+9. C
+10. A
+11. B
+12. A
+13. B
+14. B
+15. B
+16.
+class PC:
+    def __init__(self, cpu, memory, ssd, wifi, ethernet, graphics_card):
+        self.cpu = cpu
+        self.memory = memory
+        self.ssd = ssd
+        self.wifi = wifi
+        self.ethernet = ethernet,
+        self.graphics_card = graphics_card
+        self.turned_on = False
+        self.internet_connection = False
+        self.ethernet_connection = False
+
+    def turn_on(self):
+        self.turned_on = True
+        return True
+
+    def turn_off(self):
+        self.turned_on = False
+        return True
+
+    def run_program(self, program):
+        pass
+
+    def connect_ethernet(self):
+        if self.ethernet:
+            self.ethernet_connection = True
+            return True
+        else:
+            return False
+
+    def disconnect_ethernet(self):
+        self.ethernet_connection = False
+        return True
+
+    def connect_internet(self):
+        if self.internet:
+            self.internet_connection = True
+            return True
+        else:
+            return False
+
+    def disconnect_internet(self):
+        self.internet_connection = False
+        return True
+
+peters_pc = PC(Intel i7, 2 x 8GB DDR3,  1T, built-in, True, NVidia GeForce RTX 3090)
+
+
+17. Peter Jack
+18. A
+19. D
+20. C
+21. B
+22.
+def __str__(self):
+    return f"Cat [name={self.name}, age={self.age}]"
+23. B
+24. E
+25.
+class Cat:
+    def __init__(self, name="Peter")
+        self._name = name
+        self._age = 1
